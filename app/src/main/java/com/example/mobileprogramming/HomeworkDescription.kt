@@ -13,7 +13,29 @@ import android.util.Log
 //
 //Log.d("HW01", "result: $result, (expression: $expression)")
 //
-//
+//코드
+/**
+ *    // #1
+val expression = "100 / 0" // modify this for test
+
+// implement here
+val list = expression.split(" ") // expression을 split을 활용해서 공백을 기준으로 나누어 배열에 담는다.
+val a: Int = list[0].toInt() // String 타입을 Int로 변환하여 a에 담는다.
+val operator: String = list[1] // 연산자를 담는다.
+val b: Int = list[2].toInt() // String 타입을 Int로 변환하여 b에 담는다.
+
+// when을 사용하여 연산자에 따라 경우를 나누고, 해당 연산 결과는 result에 바로 담는다.
+val result = when (operator) {
+"+" -> a + b
+"-" -> a - b
+"*" -> a * b
+"/" -> if (b != 0) a / b else "Cannot divide by 0" // 0으로 나누고자 할 때에는 문구를 출력한다.
+else -> "0" // 4가지 외에 다른 기호 또는 문자를 사용할 경우 0을 출력한다.
+}
+
+Log.d("HW01", "result: $result, (expression: $expression)")
+
+ */
 //
 //
 //
@@ -28,6 +50,20 @@ import android.util.Log
 //Log.d("HW01", "result: $myUniqueArray, capacity: $capacity")
 //
 //
+/**교수님께 꼭 array 형식으로 결과가 얻어져야 하는 것인지 여쭤보기
+ * //        #2. Write a program.
+
+val capacity = 10 // modify this for test
+
+// implement here
+//        val myUniqueArray = List(capacity) { Random.nextInt(0, 100) }
+
+//        val myUniqueArray = IntArray(capacity) { (0..100).random() }
+
+val myUniqueArray = IntArray(capacity) { Random.nextInt(0,100) }.asList()
+
+Log.d("HW01", "result: $myUniqueArray, capacity: $capacity")
+ */
 //
 //
 //
@@ -46,6 +82,23 @@ import android.util.Log
 //// implent here
 //
 //
+/** 교수님께 string array가 뭔지 여쭤보기 / string lines 라고 하신 이유가 뭘지,,,
+ * val strLine = "Seoul National University of Science and Technology" // initialize string array with string lines
+
+/* Following is an example set of string lines
+"Seoul National University of Science and Technology",
+"Seoul Station",
+"IT Management",
+"Android and Kotlin is not that difficult",
+"Exit"
+*/
+
+// implent here
+val words = strLine.split(" ")
+val n = words.size
+Log.d("HW01", "The number of words is $n")
+
+ */
 //
 //
 //
