@@ -110,6 +110,19 @@ Log.d("HW01", "The number of words is $n")
 //// implement here
 //
 //
+/**
+ * var str = "I Love Kotlin" // modify this for test
+Log.d("HW01", str)
+
+// implement here
+
+val size = str.length
+
+for(i in 1 until size+1 step 1){
+Log.d("HW02", str.slice(i until size) + str.slice(0 until i))
+}
+ *
+ */
 //
 //
 //
@@ -127,6 +140,15 @@ Log.d("HW01", "The number of words is $n")
 ////implement Grade class
 //
 //
+/**
+ * class Grade(var math: Int, var science: Int, var english: Int) {
+
+fun average(): Int {
+return (math + science + english) / 3
+}
+}
+ *
+ */
 //
 //
 //
@@ -138,6 +160,19 @@ Log.d("HW01", "The number of words is $n")
 //
 //
 //
+/**
+ *  val str = "WoWoW" //modify this for test
+
+// implent here
+
+val rts = str.reversed()
+
+when(str == rts){
+true -> Log.d("HW01", "$str is palindrome!")
+else -> Log.d("HW01", "$str is Not palindrome!")
+}
+ *
+ */
 //
 //
 //// #7. The following is the definition of Point class.
