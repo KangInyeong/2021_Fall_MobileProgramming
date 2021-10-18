@@ -63,6 +63,30 @@ val capacity = 10 // modify this for test
 val myUniqueArray = IntArray(capacity) { Random.nextInt(0,100) }.asList()
 
 Log.d("HW01", "result: $myUniqueArray, capacity: $capacity")
+
+ 투라이...
+//        for (i in 0 until capacity step 1){
+//            val num:Int = (myUnique[i]).toInt()
+//            check.index(num) = 1
+//        }
+
+
+//        for (i in 0 until capacity step 1){
+//            myUnique[i] = Random.nextInt(100) + 1
+//            Log.d("HW01", "result: $i")
+//            for(j in 0 until i step 1){
+//                Log.d("HW01", "result: $i and $j")
+//                if(myUnique[j] == myUnique[i]){
+//                    Log.d("HW01", "으갹: $i. $j")
+//                    i downTo 1
+//                    Log.d("HW01", "으악: $i. $j")
+//                    break
+//                }
+//            }
+//        }
+//
+//
+
  */
 //
 //
@@ -82,7 +106,7 @@ Log.d("HW01", "result: $myUniqueArray, capacity: $capacity")
 //// implent here
 //
 //
-/** 교수님께 string array가 뭔지 여쭤보기 / string lines 라고 하신 이유가 뭘지,,,
+/**
  * val strLine = "Seoul National University of Science and Technology" // initialize string array with string lines
 
 /* Following is an example set of string lines
@@ -101,6 +125,19 @@ Log.d("HW01", "The number of words is $n")
  */
 //
 //
+/**
+ * val strLine = arrayOf(
+"Seoul National University of Science and Technology", "Seoul Station", "IT Management",
+"Android and Kotlin is not that difficult", "Exit"
+) // initialize string array with string lines
+
+// implent here
+for (item in strLine) {
+val words = item.split(" ")
+val n = words.size
+Log.d("HW01", "The number of words is $n")
+}
+ */
 //
 //// #4. Write a program that takes a string, rotates it one character at a time, and prints it all.
 //
@@ -187,3 +224,37 @@ else -> Log.d("HW01", "$str is Not palindrome!")
 //        Log.d("HW01", "Current Point: ($x, $y)")
 //    }
 //}
+/**open class Point(open var x: Int, open var y: Int) {
+fun move(x: Int, y: Int) {
+this.x = x
+this.y = y
+}
+
+
+open fun show(){
+Log.d("HW01","Current Point: ($x, $y)")
+}
+
+}
+
+class ColorPoint(x: Int, y: Int, color: String): Point(x,y) {
+
+override var y = y
+set(value){
+if (field != value) Log.d("HW01","Y has been changed to $value")
+field = value
+}
+
+var color = color
+
+fun setPoint(x: Int,y: Int){
+this.x = x
+this.y = y
+}
+
+override fun show(){
+Log.d("HW01","Color:$color Current Point: ($x, $y)")
+}
+
+}
+**/
