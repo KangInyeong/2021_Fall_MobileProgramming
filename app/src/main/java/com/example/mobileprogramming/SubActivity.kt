@@ -23,14 +23,17 @@ class SubActivity : AppCompatActivity() {
 
         val intent_dial = Intent(Intent.ACTION_DIAL).apply {
 //            data = Uri.parse("tel:$number")
+            Intent.createChooser(this, "Which app to use?")
+            putExtra("checking",uri)
         }
 
-        val intent_choose = Intent.createChooser(intent_dial, "Which app to use?")
 
         val dial = Intent(Intent.ACTION_VIEW, Uri.parse("tel:$number")).apply {
+            val checking = getStringExtra("checking")
             putExtra("check",uri)
             val hi = uri
             Log.d("itm", "예써비어 $hi")
+            Log.d("itm", "예써비어dd $checking")
         }
 
 
