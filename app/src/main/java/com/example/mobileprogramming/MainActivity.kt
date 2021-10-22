@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // 'mes' is assigned from intent which has the numbers to be get by user
-        val mes = intent.getStringExtra("check")
+        val mes = intent.dataString
 
         // If 'mes' is not null because of having the numbers, the popup is shown with the numbers.
         if (mes != null) {
