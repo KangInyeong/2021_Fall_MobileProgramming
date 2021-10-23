@@ -10,21 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileProgramming">
 
-<!--        #hw2-->
         <activity
             android:name=".SubActivity"
             android:exported="true" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.CHOOSER" />-->
 
-<!--                <category android:name="android.intent.category.DEFAULT" />-->
-<!--            </intent-filter>-->
+            <!--#hw2-->
+            <!--This is the intent-filter to use implicit intent -->
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <data android:scheme="tel"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
 
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.VIEW"/>-->
-<!--                <data android:scheme="tel"/>-->
-<!--                <category android:name="android.intent.category.DEFAULT"/>-->
-<!--            </intent-filter>-->
         </activity>
 
         <activity
@@ -35,14 +32,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-<!--            #hw2-->
-            <intent-filter>
-                <action android:name="android.intent.action.DIAL" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-
         </activity>
     </application>
 

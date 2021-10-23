@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.mobileprogramming.databinding.ActivityMainBinding
 
 class SubActivity : AppCompatActivity() {
@@ -13,19 +14,27 @@ class SubActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sub)
 
         //#hw2
-        val binding = ActivityMainBinding.inflate(layoutInflater)
 
+        //use view binding
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val number = intent.getStringExtra("number")
-        Log.d("itm","hey $number")
-        val uri = Uri.parse("tel:$number")
+        //Receive the number though intent from MainActivity then assign it
+        val num = intent.getStringExtra("number")
 
-        val intent_dial = Intent(Intent.ACTION_DIAL,Uri.parse("tel:$number")).run {
-            Intent.createChooser(this, "Which app to use?")
+        //Make pop-up message by using Toast when SubActivity is replied
+        if(num != null){
+
+            //If the user doesn't fill the black, the pop-up message shows the text
+            if(num.isEmpty()){
+                Toast.makeText(this, "Put your number!!!!", Toast.LENGTH_SHORT).show()
+            }
+
+            //If the user fills the black, the pop-up message shows the text
+            Toast.makeText(this, "You can’t call to $num!!!!", Toast.LENGTH_SHORT).show()
         }
 
-
-        startActivity(intent_dial)
+        //Then, finish this SubActivity
+        finish()
     }
 }
