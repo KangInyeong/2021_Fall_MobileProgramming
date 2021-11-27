@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="price"
+        android:text="0"
         android:id="@+id/txt_price"
         android:textSize="20sp"/>
     </LinearLayout>
@@ -39,28 +39,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/dollar20"
-                android:text="$20:"
+                android:text="$20: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/dollar10"
-                android:text="$10:"
+                android:text="$10: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/dollar5"
-                android:text="$5:"
+                android:text="$5: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/dollar1"
-                android:text="$1:"
+                android:text="$1: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
 
@@ -68,28 +68,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/cent25"
-                android:text="25¢:"
+                android:text="25¢: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/cent10"
-                android:text="10¢:"
+                android:text="10¢: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/cent5"
-                android:text="5¢:"
+                android:text="5¢: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/cent1"
-                android:text="1¢:"
+                android:text="1¢: 0"
                 android:padding="6dp"
                 android:textSize="20sp"/>
 
@@ -101,7 +101,7 @@
             android:orientation="horizontal"
             android:columnCount="3"
             android:rowCount="3"
-            android:padding="30dp">
+            android:padding="10dp">
 
             <Button
                 android:layout_width="wrap_content"
