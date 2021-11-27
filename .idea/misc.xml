@@ -3,8 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/drawable/round.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout-land/activity_hw3change.xml" value="0.35405405405405405" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout-sw600dp/activity_hw3change.xml" value="0.153515625" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_hw3.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_hw3change.xml" value="0.22" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_hw3color.xml" value="0.1796875" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_hw3intro.xml" value="0.25" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_hw3lucky.xml" value="0.33" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_intro.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_project.xml" value="0.2046875" />
         <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/activity_sub.xml" value="0.134375" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/custom_tab_button.xml" value="0.2046875" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/fragment_now.xml" value="0.2046875" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/fragment_past.xml" value="0.2046875" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/fragment_tab1.xml" value="0.2046875" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/fragment_tab2.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/layout/round.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/0903A/AndroidStudioProjects/MobileProgramming/app/src/main/res/menu/menu.xml" value="0.33" />
       </map>
     </option>
   </component>
