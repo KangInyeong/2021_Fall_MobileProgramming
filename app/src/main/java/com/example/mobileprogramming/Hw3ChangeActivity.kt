@@ -1,6 +1,7 @@
 package com.example.mobileprogramming
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mobileprogramming.databinding.ActivityHw3changeBinding
@@ -12,22 +13,24 @@ class Hw3ChangeActivity : AppCompatActivity(){
     // binding the layout
     val binding by lazy { ActivityHw3changeBinding.inflate(layoutInflater) }
 
+
+    // initialize the variables
+    var result = ""
+    var price = ""
+
+    var nd20 = ""
+    var nd10 = ""
+    var nd5 = ""
+    var nd1 = ""
+    var nc25 = ""
+    var nc10 = ""
+    var nc5 = ""
+    var nc1 = ""
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
-        // initialize the variables
-        var result = ""
-        var price = ""
-
-        var nd20 = ""
-        var nd10 = ""
-        var nd5 = ""
-        var nd1 = ""
-        var nc25 = ""
-        var nc10 = ""
-        var nc5 = ""
-        var nc1 = ""
 
         /**This part code is same num1 ~ num9 button's case. **/
         //If the num1 button is clicked, this event is executed.
@@ -609,4 +612,67 @@ class Hw3ChangeActivity : AppCompatActivity(){
 
 
     }
+
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.run {
+            putString("result", result)
+            putString("price", price)
+            putString("nd20", nd20)
+            putString("nd10", nd10)
+            putString("nd5", nd5)
+            putString("nd1", nd1)
+            putString("nc25", nc25)
+            putString("nc10", nc10)
+            putString("nc5", nc5)
+            putString("nc1", nc1)
+        }
+        Log.d("ITM", "onSave called!")
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Log.d("ITM", "onRestore called!")
+        savedInstanceState.getString("result").toString().also {
+            txt_price.text = it
+            result = it
+        }
+        savedInstanceState.getString("price").toString().also {
+            price = it
+        }
+        savedInstanceState.getString("nd20").toString().also {
+            binding.dollar20.text = it
+            nd20 = it
+        }
+        savedInstanceState.getString("nd10").toString().also {
+            dollar10.text = it
+            nd10 = it
+        }
+        savedInstanceState.getString("nd5").toString().also {
+            dollar5.text = it
+            nd5 = it
+        }
+        savedInstanceState.getString("nd1").toString().also {
+            dollar1.text = it
+            nd1 = it
+        }
+        savedInstanceState.getString("nc25").toString().also {
+            cent25.text = it
+            nc25 = it
+        }
+        savedInstanceState.getString("nc10").toString().also {
+            cent10.text = it
+            nc10 = it
+        }
+        savedInstanceState.getString("nc5").toString().also {
+            cent5.text = it
+            nc5 = it
+        }
+        savedInstanceState.getString("nc1").toString().also {
+            cent1.text = it
+            nc1 = it
+        }
+    }
+
 }
